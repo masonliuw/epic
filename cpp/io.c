@@ -19,7 +19,7 @@ float_image read_edges(const char *filename, const int width, const int height){
 
 /* read matches, stored as x1 y1 x2 y2 per line (other values on the same is not taking into account */
 float_image read_matches(const char *filename){
-    float_image res = empty_image(float, 4, 100000);
+    float_image res = empty_image(float, 4, 500000);
     FILE *fid = fopen(filename, "r");
     int nmatch = 0;
     float x1, x2, y1, y2;
